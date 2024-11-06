@@ -1,0 +1,421 @@
+/* Основні стилі */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo-link {
+    margin-right: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.nav-links a:hover {
+    color: #f3ca20;
+}
+
+.hero {
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 150px 20px;
+    color: #f3ca20;
+}
+
+.animated-text {
+    font-size: 3.5em;
+    animation: fadeIn 2s ease-in-out;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #f3ca20;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: #ccc;
+}
+
+.social a {
+    color: #ccc;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+.social a:hover {
+    color: #f3ca20;
+}
+
+/* Логотип */
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+/* Оформлення зображення операції */
+.operation-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.operation-image img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Відео секція */
+.video-section {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.video-section h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5em;
+    color: #f3ca20;
+    margin-bottom: 20px;
+}
+
+/* Стилі для випадаючого меню */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    list-style: none;
+    padding: 5px 0;
+    z-index: 1000;
+    border-radius: 5px;
+    min-width: 150px;
+}
+
+.dropdown-menu li {
+    padding: 10px 15px;
+    white-space: nowrap;
+}
+
+.dropdown-menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #444;
+    color: #f3ca20;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+/* Секція з формою */
+.schedule-section {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #333;
+    color: #f3ca20;
+}
+
+.date-form {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.date-form label {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+#reminder-date {
+    padding: 8px;
+    font-size: 1em;
+    margin: 10px 0;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: #f3ca20;
+}
+
+.date-form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #f3ca20;
+    color: #222;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.date-form button:hover {
+    background-color: #d1a61f;
+}
+/* Опис брелоків */
+.charm-info-section {
+    text-align: center;
+    padding: 40px 20px;
+    color: #f3ca20;
+    background-color: #222;
+}
+
+.charm-info-section h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5em;
+    color: #f3ca20;
+    margin-bottom: 20px;
+}
+
+.charm-info-section p,
+.charm-info-section ul {
+    font-size: 1.1em;
+    color: #ddd;
+}
+
+.charm-info-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.charm-info-section li {
+    margin: 10px 0;
+}
+
+/* Карусель брелоків */
+.carousel-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #333;
+    color: #f3ca20;
+}
+
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-track-container {
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    min-width: 100%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Кнопки для гортання */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #f3ca20;
+    font-size: 2em;
+    padding: 5px 15px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+/* Секція з мапами */
+.map-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #222;
+    color: #f3ca20;
+}
+
+.map-section h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5em;
+    color: #f3ca20;
+    margin-bottom: 20px;
+}
+
+.map-section p {
+    font-size: 1.1em;
+    color: #ddd;
+}
+
+.map-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+}
+
+.map-box {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s;
+}
+
+.map-box h2 {
+    font-size: 1.5em;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #f3ca20;
+    margin-bottom: 15px;
+}
+
+.map-box:hover {
+    transform: scale(1.05);
+}
+
+/* Для великих екранів */
+@media (min-width: 768px) {
+    .map-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .map-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+/* Основні стилі для сторінки */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #222;
+    color: #ddd;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links a {
+    color: #f3ca20;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.header-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header-section h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5em;
+    color: #f3ca20;
+    margin-bottom: 20px;
+}
+
+/* Оформлення акордеону */
+#accordion {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.accordion-item {
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.accordion-header {
+    background-color: #333;
+    padding: 15px 20px;
+    color: #f3ca20;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.accordion-body {
+    padding: 20px;
+    background-color: #222;
+    color: #ddd;
+}
+
+.accordion-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

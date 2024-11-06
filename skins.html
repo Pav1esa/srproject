@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нові скіни</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="icon" href="img/завантаження.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+        <a href="index.html" class="logo-link">
+            <img src="img/завантаження.jpg" alt="Логотип CS:GO" class="logo">
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="novinki.html">Новинки</a></li>
+                <li class="dropdown">
+                    <a href="#">Цікаве</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tsikave.html">Де можна зіграти</a></li>
+                        <li><a href="skins.html">Нові скіни</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+
+  <!-- Секція з акардеоном -->
+  <section class="header-section">
+    <h1>Нові скіни в CS:GO 2</h1>
+    <div id="accordion">
+        <div class="accordion-item">
+          <h5 class="accordion-header">Заголовок 1</h5>
+          <div class="accordion-body">
+            <img src="img/image_processing20241003-1-105wy13.webp" alt="Image 1" class="accordion-image">
+            <p>Зануртеся у світ ностальгії та естетики з "Vaporwave". Ця модель втілює в собі дух ретро, поєднуючи яскраві кольори, глітч-арт та незабутні візуальні ефекти. "Vaporwave" — це не просто зброя, а стиль життя, що дозволяє вам відчути ритм 80-х і 90-х у кожному пострілі. Зробіть свій слід на полі бою незабутнім з цією елегантною та футуристичною моделлю.</p>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h5 class="accordion-header">Заголовок 2</h5>
+          <div class="accordion-body">
+            <img src="img/image_processing20241003-1-1ja90v1.webp" alt="Image 2" class="accordion-image">
+            <p>Потужний, як монстр, що пробуджується в темряві. AK-47 "The Monster" — це символ сили і непереможності. Додайте до свого арсеналу цю легендарну зброю, і нехай ваш супротивник відчує всю її міць.</p>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h5 class="accordion-header">Заголовок 3</h5>
+          <div class="accordion-body">
+            <img src="img/image_processing20241003-1-6b8ttp.webp" alt="Image 3" class="accordion-image">
+            <p>Насолоджуйтесь чудовим смаком перемоги з Scar "Wild Berry". Яскраві кольори, що нагадують про тропічні плоди, зливаються в один стильний образ. Візьміть цю зброю в руки та дайте відчути своїм супротивникам, що ви завжди в тренді.</p>
+          </div>
+        </div>
+        <!-- Додати більше елементів за потреби -->
+        <div class="accordion-item">
+            <h5 class="accordion-header">Заголовок 4</h5>
+            <div class="accordion-body">
+              <img src="img/image_processing20241003-1-6mz7uq.webp" alt="Image 4" class="accordion-image">
+              <p>Долучіться до аркадного стилю з Deagle "Starcade". Ця зброя поєднує в собі класичний дизайн та сучасні елементи. Зробіть кожен постріл точним, як у старих іграх, і нехай ваше ім'я стане легендою.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h5 class="accordion-header">Заголовок 5</h5>
+            <div class="accordion-body">
+              <img src="img/image_processing20241003-1-djli3i.webp" alt="Image 5" class="accordion-image">
+              <p>Підкоріть своїх супротивників з Heat Treade. Ця зброя приносить тепло на поле бою, роблячи кожен постріл відчутним. Відчуйте вогонь і готовність до боротьби, коли ви тримаєте цю модель у руках.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h5 class="accordion-header">Заголовок 6</h5>
+            <div class="accordion-body">
+              <img src="img/image_processing20241003-1-m8a42k.webp" alt="Image 6" class="accordion-image">
+              <p>AWP "CMYK" — це втілення кольору та точності. Зробіть свій наступний постріл незабутнім з цією високоточністю. Додайте яскравих кольорів до свого арсеналу і підкорюйте поле бою!</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Підключення jQuery та jQuery UI -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+  <!-- Ініціалізація акордеону -->
+  <script>
+    $(document).ready(function() {
+        $("#accordion").accordion({
+            heightStyle: "content",
+            collapsible: true,
+            active: 0,
+            animate: 200
+        });
+    });
+  </script>
+</body>
+</html>
